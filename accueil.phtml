@@ -1,0 +1,137 @@
+		
+		<div class='contener'>
+			<div id='accueilleft'>
+				<div id='contour'>
+					<div id='ajout'>
+			
+						<h2>Ajout</h2>
+
+							<form enctype="multipart/form-data" method="post" name="register" action='accueil.php'>
+					  
+					  			<label for="register_titre"><h3>Titre:</h3></label>
+					  			<input id="register_titre" type="text" name="titre" class="form-control" value='<?= htmlspecialchars($titre)?>'>								  	
+								<label for='register_image'><h3>Image</h3></label>
+								<input id='register_image' type="file" name='image' class='form-control'>
+
+								<label for="register_notice"><h3>Notice:</h3></label>
+								<input id="register_noticecheckbox" type="radio" name="notice" class="form-control" value='Oui' checked="checked">
+								<label for="register_notice" >Oui</label>
+								<input id='register_noticecheckbox' type="radio" name="notice" class="form-control" value='Non'>
+								<label for='register_notice'>Non</label>
+
+								<label for="register_apparence"><h3>Etat:</h3></label>
+								<input id="register_apparence" type="radio" name="apparence" class="form-control" value='Mauvais' checked="checked">
+								<label for='register_apparence'>Mauvais</label>
+								<input id="register_apparence" type="radio" name="apparence" class="form-control" value='Bien'>
+								<label for='register_apparence'>Bien</label>
+								<input id="register_apparence" type="radio" name="apparence" class="form-control" value='Très Bien'>
+								<label for='register_apparence'>Très Bien</label>
+								<input id="register_apparence" type="radio" name="apparence" class="form-control" value='Excellente'>
+								<label for='register_apparence'>Excellent</label>
+
+								<label for="register_console"><h3>Console:</h3></label>
+								<select id='register_console' type='text' name='console' class='form-accueil'>
+									<option value="Atari 2600">Atari 2600</option>
+									<option value="Dreamcast">Dreamcast</option>
+									<option value="Game Boy Advance">Game Boy Advance</option>
+									<option value="Game Boy Color">Game Boy Color</option>
+									<option value="Game Cube">Game Cube</option>
+									<option value="Master System 1">Master System 1</option>
+									<option value="Master System 2">Master System 2</option>
+									<option value="Mega Drive">Mega Drive</option>
+									<option value= "Nes">Nes</option>
+									<option value="Nintendo 3DS">Nintendo 3DS</option>
+									<option value="Playstation 1">Playsation 1</option>
+									<option value="Playstation 2">Playsation 2</option>
+									<option value="Playstation 4">Playstation 4</option>
+									<option value="Super Nintendo">Super Nintendo</option>
+									<option value="Switch">Switch</option>
+									<option value="Wii">Wii</option>
+									<option value="Wii U">Wii U</option>
+									<option value="Xbox 360">Xbox 360</option>
+								</select>
+
+
+								<label for='register_remarque'><h3>Remarque(s)</h3></label>
+								<input id='register_remarque' type='text' name='remarque' class='form-control' value='<?=$remarque?>'>
+
+								<label for='register_prix'><h3>Prix</h3></label>
+								<input id='register_prix' type='text' name='prix'class='form-control' value='<?=$prix?>'>
+									
+								<p><input type="submit" class="btn btn-default" value="Enregistrer"></p>
+										
+							</form>
+					</div>
+				</div>
+			</div>
+
+			<div id='accueilright'>
+				<div id='contour'>
+					<div id='enregistrement'>
+			
+						<h2>Modification(s)</h2>
+
+							<form enctype="multipart/form-data" method="post" name="update" action='update.php'>
+					  
+					  			<label for="update_titre"><h3>Titre:</h3></label>
+					  			<input id="update_titre" type="text" name="titre" class="form-control" value='<?= htmlspecialchars($titre);?>'>								  	
+								<label for='update_image'><h3>Image</h3></label>
+								<input id='update_image' type="file" name='image' class='form-control'>
+
+								<label for="update_notice"><h3>Notice:</h3></label>
+								<input id="update_noticecheckbox" type="radio" name="notice" class="form-control" value='Oui' checked="checked">
+								<label for="update_notice" >Oui</label>
+								<input id='update_noticecheckbox' type="radio" name="notice" class="form-control" value='Non'>
+								<label for='update_notice'>Non</label>
+
+								<label for="update_apparence"><h3>Etat:</h3></label>
+								<input id="update_apparence" type="radio" name="apparence" class="form-control" value='Mauvais' checked="checked">
+								<label for='update_apparence'>Mauvais</label>
+								<input id="update_apparence" type="radio" name="apparence" class="form-control" value='Bien'>
+								<label for='update_apparence'>Bien</label>
+								<input id="update_apparence" type="radio" name="apparence" class="form-control" value='Très Bien'>
+								<label for='update_apparence'>Très Bien</label>
+								<input id="update_apparence" type="radio" name="apparence" class="form-control" value='Excellente'>
+								<label for='update_apparence'>Excellent</label>
+
+								<label for="update_console"><h3>Console:</h3></label>
+								<select id='update_console' type='text' name='console' class='form-accueil'>
+									<option value="Atari 2600">Atari 2600</option>
+									<option value="Dreamcast">Dreamcast</option>
+									<option value="Game Boy Advance">Game Boy Advance</option>
+									<option value="Game Boy Color">Game Boy Color</option>
+									<option value="Game Cube">Game Cube</option>
+									<option value="Master System 1">Master System 1</option>
+									<option value="Master System 2">Master System 2</option>
+									<option value="Mega Drive">Mega Drive</option>
+									<option value= "Nes">Nes</option>
+									<option value="Nintendo 3DS">Nintendo 3DS</option>
+									<option value="Playstation 1">Playsation 1</option>
+									<option value="Playstation 2">Playsation 2</option>
+									<option value="Playstation 4">Playstation 4</option>
+									<option value="Super Nintendo">Super Nintendo</option>
+									<option value="Switch">Switch</option>
+									<option value="Wii">Wii</option>
+									<option value="Wii U">Wii U</option>
+									<option value="Xbox 360">Xbox 360</option>
+								</select>
+
+
+								<label for='update_remarque'><h3>Remarque(s)</h3></label>
+								<input id='update_remarque' type='text' name='remarque' class='form-control' value='<?=$remarque?>'>
+
+								<label for='update_prix'><h3>Prix</h3></label>
+								<input id='update_prix' type='text' name='prix'class='form-control' value='<?=$prix?>'>
+									
+								<p><input type="submit" class="btn btn-default" value="Modifier"></p>
+										
+							</form>
+
+							
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+

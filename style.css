@@ -1,0 +1,160 @@
+/*GENERAL*/
+*{
+	font-family: 'Gloria Hallelujah', cursive;
+	margin: 2%;
+}
+header{
+	margin-bottom: 0;
+}
+body{
+	background-color: black;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+}
+/*LAYOUT*/
+#headeraccueil{
+	background-image: url('background/image.jpeg');
+	padding: 2% 0% 5% 0%;
+	margin-bottom: 0;
+}
+h1{
+	font-size: 3em;
+	margin: 3% 0 0 10%;
+}
+nav{
+	text-align: center;	
+	margin:0;
+}
+ul{
+	margin:0;
+	padding-left: 0;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+main{
+	margin-top: 0;
+}
+#divErrors {
+	color: red;
+}
+
+/*ACCUEIL*/
+.contener{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0;
+}
+#contour{
+	border: 0.3rem solid;
+	border-color: rgb(126,51,0);
+	border-width: 2%;
+	border-radius: 5%;
+}
+#accueilright, #accueilleft{
+	width: 50%;
+}
+#ajout, #enregistrement{
+	background-color: rgb(78,22,9);
+	color:white;
+	border-radius: 4%;
+	border: 0.1rem solid;
+	border-color: black;
+	margin:0%;	
+}
+#ajout h2, #enregistrement h2{
+	margin: 0%;
+	-webkit-text-stroke: 3px;
+	-webkit-text-stroke-color: black;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 2.5em;
+}
+h3{
+	-webkit-text-stroke: 1.5px;
+	-webkit-text-stroke-color: black;
+	font-size:1.5em;
+}
+input{
+	border: solid;
+	border-color:black;
+	width: 250px;
+	height: 25px;
+	font-size: 1em;
+}
+input[type='radio']{
+	width: 16px;
+	height: 16px;
+}
+select{
+	width: 200px;
+	height: 35px;
+	border:solid;
+	border-color: black;
+	font-size: 1.1em;
+}
+
+p input{
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	width: 25%;
+	height: 20%;
+	cursor:pointer;
+	padding:1%;
+	font-size: 20px;
+}
+
+/*liste*/
+#div_recherche{
+	text-align: center;
+}
+#h3_recherche{
+	color:white;
+	margin:0 0 0 1.5%;
+}
+#submit_recherche{
+	width: 200px;
+	padding:0.5%;
+	margin: 0 0 0 2.5%;
+
+}
+.table{
+	text-align: center;
+	border-collapse: collapse;
+	margin: auto;
+	width: 90%;
+	background-color: rgba(255,255,255, .1);
+	border-radius: 14px;
+	opacity: rgba(255,0,0, .5)
+}
+th, td{
+	color:white;
+	border-bottom: solid;
+	border-color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+	opacity:1;
+} 
+th{
+	padding:2% 0% 2% 0%;
+}
+td{
+	padding: 1%  0% 1% 0%;
+}
+#image{
+	width: 5%;
+	height: 5%;
+}
+
+/*recherche*/
+.hide{
+	display: none 
+}
+.noHide{
+	display: block;
+}

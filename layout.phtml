@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<meta charset="utf-8" />
+	<title>listejeux</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body> 
+	<header>
+		<div id='headeraccueil'>
+		<h1><?= $title ?></h1>
+	</div>
+		<nav>
+			<ul>
+				<a href='accueil.php'><li>Accueil</li></a>
+				<a href='liste.php'><li>Liste</li></a>
+				<a href='recherche.php'><li>Recherche</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<div id='divErrors'>
+				 <?php if(!empty($errors)): ?>
+		    		<div class="alert alert-danger">
+		        		<?php foreach($errors as $error): ?>
+		            		<?= " $error<br>" ; ?>          
+		        		<?php endforeach; ?>
+		    		</div>
+		    	<?php endif ; ?>
+		    </div>
+
+
+		
+		<?= include($template. '.phtml')?>
+
+
+	</main>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+<script type="text/javascript" src='main.js'></script>	
+</body>
+</html>

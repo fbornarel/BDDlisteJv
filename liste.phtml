@@ -1,0 +1,29 @@
+
+<?php echo "<main style='background-image:url(background/fontliste.jpg)'></body>";?>
+		
+	        <table class="table">
+	            <thead>
+	                <tr>
+	                	<th>LOGO</th>
+	                    <th>TITRE</th>
+	                    <th>NOTICE</th>
+	                    <th>ETAT</th>
+	                    <th>CONSOLE</th>
+	                    <th>REMARQUE</th>
+	                    <th>PRIX</th>              
+	                </tr>
+	            </thead>
+	            <tbody >
+	                <?php foreach($orders as $order): ?>
+	                    <tr id='elements_liste'>
+	                    	<td><img style='width: 100px' src=<?= $order['image'] ?> ></td>
+	                        <td><?= $order['titre'] ?></td>
+	                        <td><?= $order['notice'] ?></td>
+	                        <td><?= $order['état'] ?></td>
+	                        <td><?= $order['console'] ?></td>
+	                        <td><?= $order['remarque'] ?></td>
+	                        <td><?= $order['prix'] ?></td> 
+	                    </tr>
+	                <?php endforeach ?>
+	            </tbody>
+	        </table>

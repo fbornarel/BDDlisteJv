@@ -1,0 +1,40 @@
+<div id='div_recherche'>-->
+	
+	<label for='recherche_titre'><h3 id='h3_recherche'>Titre:</h3></label>
+	<input id='recherche_titre' type='text' name='recherche_titre'style='margin:0;' value=''>
+
+	<p><input id='submit_recherche' type='submit' value='rechercher' onclick="search();"></p>
+
+</div>
+	
+
+			<table class="table">
+	            <thead>
+	                <tr>
+	                	<th>LOGO</th>
+	                    <th>TITRE</th>
+	                    <th>NOTICE</th>
+	                    <th>ETAT</th>
+	                    <th>CONSOLE</th>
+	                    <th>REMARQUE</th>
+	                    <th>PRIX</th>              
+	                </tr>
+	            </thead>
+	            <tbody id='elements_liste'>
+	                <?php foreach($orders as $order): ?>
+	                	  <tr >
+	                    	<td><img style='width: 100px' src=<?= $order['image'] ?> ></td>
+	                        <td id='titre'><?= $order['titre'] ?></td>
+	                        <td><?= $order['notice'] ?></td>
+	                        <td><?= $order['état'] ?></td>
+	                        <td><?= $order['console'] ?></td>
+	                        <td><?= $order['remarque'] ?></td>
+	                        <td><?= $order['prix'] ?></td> 
+	                    </tr>
+	                <?php endforeach ?>
+	            </tbody>
+	        </table> 
+
+	
+
+
